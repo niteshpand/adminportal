@@ -5,8 +5,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FeatherIconComponent } from './components/feather-icon/feather-icon.component';
 import { LayoutComponent } from './components/layout/layout.component';
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,10 +14,8 @@ import { LayoutComponent } from './components/layout/layout.component';
     FooterComponent,
     SidebarComponent,
     FeatherIconComponent,
-    LayoutComponent
+    LayoutComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule, HttpClientModule, RouterModule],
 })
-export class SharedModule { }
+export class SharedModule {}
