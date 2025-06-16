@@ -131,7 +131,13 @@ export class MenuService {
         },
       ],
     },
-    { title: 'Reports', path: 'bar-chart', type: 'link', active: false },
+    {
+      title: 'Reports',
+      path: 'reports',
+      icon: 'bar-chart',
+      type: 'link',
+      active: false,
+    },
     {
       title: 'Invoice',
       path: 'invoice',

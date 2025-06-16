@@ -7,6 +7,7 @@ import { FeatherIconComponent } from './components/feather-icon/feather-icon.com
 import { LayoutComponent } from './components/layout/layout.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { RouterModule } from '@angular/router';
     SidebarComponent,
     FeatherIconComponent,
     LayoutComponent,
+    BreadcrumbComponent,
   ],
   imports: [CommonModule, HttpClientModule, RouterModule],
 })
