@@ -26,5 +26,7 @@ export class SidebarComponent implements OnInit {
         : global.BASE_USERS_IMAGES_PATH + userDetails?.imagePath;
     this.menuItems = this._menuService.MENUITEMS;
   }
-  toggleNavActive(menuItem){}
+  toggleNavActive(menuItem: Menu) {
+    menuItem.active = !menuItem.active;
+  }
 }

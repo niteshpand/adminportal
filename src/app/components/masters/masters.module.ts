@@ -8,7 +8,8 @@ import { TagComponent } from './tag/tag.component';
 import { ColorComponent } from './color/color.component';
 import { UsertypeComponent } from './usertype/usertype.component';
 import { SizeComponent } from './size/size.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,8 @@ import { SizeComponent } from './size/size.component';
     TagComponent,
     ColorComponent,
     UsertypeComponent,
-    SizeComponent
+    SizeComponent,
   ],
-  imports: [
-    CommonModule,
-    MastersRoutingModule
-  ]
+  imports: [CommonModule, MastersRoutingModule, ReactiveFormsModule, NgbModule],
 })
-export class MastersModule { }
+export class MastersModule {}
