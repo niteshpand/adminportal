@@ -18,6 +18,9 @@ export class HttpService {
       headers: httpHeaders,
     });
   }
+  postImage(url: string, model: any): Observable<any> {
+    return this._httpClient.post(url, model);
+  }
 
   put(url: string, id: number, model: any): Observable<any> {
     const body = JSON.stringify(model);

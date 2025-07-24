@@ -10,6 +10,7 @@ import { UsertypeComponent } from './usertype/usertype.component';
 import { SizeComponent } from './size/size.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     UsertypeComponent,
     SizeComponent,
   ],
-  imports: [CommonModule, MastersRoutingModule, ReactiveFormsModule, NgbModule],
+  imports: [
+    CommonModule,
+    MastersRoutingModule,
+    ReactiveFormsModule,
+    NgbModule,
+    NgxDatatableModule,
+  ],
 })
 export class MastersModule {}

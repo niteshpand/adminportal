@@ -141,7 +141,7 @@ export class SizeComponent implements OnInit, OnDestroy {
         }
       });
   }
-  edit(id: number) {
+  Edit(id: number) {
     this.buttonText = 'Update';
     this.dbops = DbOperation.update;
     this.elnav.select('addtab');
@@ -150,7 +150,7 @@ export class SizeComponent implements OnInit, OnDestroy {
     this.addForm.patchValue(this.objRow);
   }
 
-  delete(id: number) {
+  Delete(id: number) {
     let obj = {
       id: id,
     };

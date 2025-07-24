@@ -41,7 +41,22 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="custom-datatable">
-                                                Table Here
+                                                <ngx-datatable class="bootstrap" [rows]="objRows" [columnMode]="'force'"
+                                                    [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'"
+                                                    [limit]="5">
+                                                    <ngx-datatable-column name="name"></ngx-datatable-column>
+                                                    <ngx-datatable-column name="created Date"
+                                                        prop="createdOn"></ngx-datatable-column>
+                                                    <ngx-datatable-column name="Actions">
+                                                        <ng-template ngx-datatable-cell-template let-row="row">
+                                                            <button type="button" style="color:green;"
+                                                                class="fa fa-edit mt-2" (click)="Edit(row.id)"></button>
+                                                            <button type="button" style='color:red'
+                                                                class="fa fa-trash-o" (click)="Delete(row.id)"></button>
+                                                        </ng-template>
+                                                    </ngx-datatable-column>
+                                                </ngx-datatable>
+
                                             </div>
                                         </div>
                                     </div>
@@ -53,11 +68,6 @@
                 </li>
             </ul>
             <div [ngbNavOutlet]="nav"></div>
-
-
-
-
-
 
         </div>
     </div>

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  BASE_API_PATH: 'http://sahosoftweb.com/api/',
+  BASE_API_PATH: 'https://sahosoftweb.com/api/',
 };
 
 /*
